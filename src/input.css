@@ -87,40 +87,43 @@
     .buhok.open{
         @apply opacity-[.5]  transition-all
     }
-    .kalbo{
+    .favorites{
         @apply bg-puti
     }
-    .kalbo__wrapper{
-        @apply bg-gray-600 py-[2rem]
+    .favorites__wrapper{
+        @apply bg-get py-[2rem]
     }
-    .kalbo__nav{
-        @apply max-w-[25rem] flex flex-wrap gap-[2rem] mx-auto justify-center
+    .favorites__wrapper h1{
+        @apply text-center text-[1.5rem] font-bold pb-[1.5rem]
     }
-    .kalbo__nav li{
-        @apply p-[.5rem] rounded-md text-white
+    .favorites__nav{
+        @apply max-w-[25rem] flex flex-wrap gap-[2rem] mx-auto justify-center 
     }
-    .kalbo__nav li.active{
-        @apply bg-blue-500 
+    .favorites__nav li{
+        @apply p-[.4rem] rounded-md text-black font-bold 
     }
-    .kalbo__desc__wrapper{
-        @apply bg-gray-300 p-[2rem]
+    .favorites__nav li.active{
+        @apply  bg-lasalle 
     }
-    .kalbo__item__content{
+    .favorites__desc__wrapper{
+        @apply bg-BG p-[1rem]
+    }
+    .favorites__item__content{
         @apply hidden
     }
-    .kalbo__item__content img{
-        @apply w-[10rem] h-auto rounded-full bg-gento px-[1rem]
+    .favorites__item__content img{
+        @apply  h-auto rounded-full bg-BG px-[1rem] lg:w-[3-rem]
     }
-    .kalbo__item__content.active{
-        @apply flex gap-[2rem] items-center justify-center
+    .favorites__item__content.active{
+        @apply flex gap-[2rem] flex-col text-center
     }
-    .kalbo__text h2{
-        @apply text-[1.5rem] font-bold mb-[1rem]
+    .favorites__text h2{
+        @apply text-[1.2rem] font-semibold  mb-[1rem]
     }
-    .kalbo__text table tr{
-        @apply h-[5rem] flex flex-col
+    .favorites__text table tr{
+        @apply h-[5rem] flex flex-col text-center
     }
-    .kalbo__text table tr td:first-child{
-        @apply font-semibold
+    .favorites__text table tr td:first-child{
+        @apply font-normal 
     }
 }
