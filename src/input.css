@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    max-width:90rem;
+    padding:1.5rem;
+    margin:0 auto;
+}
+.btn {
+      background-color: transparent;
+      padding: 0.2rem 1rem;
+      border-radius: 3rem;
+      border: 1px solid #2b2b2b;
+    }
+    .btn:hover {
+      background-color: hsl(240, 1.51%, 90%);
+    }
+    .btn.bg--puti {
+      background: #ffffff;
+    }
+    .btn.bg--puti:hover {
+      background-color: hsl(0,0%,50%);
+    }
+    .btn.bg--itim {
+      background: #000000;
+      color:#ffffff;
+    }
+    .btn.bg--itim:hover {
+      background-color: hsl(240, 1.51%, 20%);
+    }
+
+@layer components{
+    .header{
+        background:#ffffff;
+        position:relative;
+        position:fixed;
+        width:100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .header .container{
+        @apply lg:p-[.5rem]
+    }
+    .header img{
+        @apply w-[2.5rem]
+    }
+    .branding{
+        @apply lg:flex lg:items-center
+    }
+    .header__wrapper{
+        @apply flex items-center justify-between
+    }
+    .header__actions{
+        @apply hidden lg:flex lg:gap-[1.5rem];
+    }
+    .header__nav{
+        @apply bg-puti absolute top-[5.6rem] right-[-100rem] h-[100vh] w-[75%] 
+        px-[2rem] transition-all z-[999] lg:static lg:w-fit lg:h-fit
+    }
+    .header__nav.open{
+        @apply right-[0rem] transition-all
+    }
+    .header__nav ul{
+        @apply py-[2rem] flex flex-col gap-[1.5rem] lg:flex-row
+    }
+    .header__nav ul li a{
+        @apply text-[1.5rem]  lg:text-[1.1rem]
+    }
+    .header__nav ul.nav__top{
+        @apply border-b-[1px] border-semento lg:border-none
+    }
+    .header__nav ul.nav__bottom{
+        @apply lg:hidden
+    }
+    .header__nav ul.nav__top li:hover a{
+        @apply text-lasalle
+    }
+    .toggle__menu{
+        @apply flex flex-col gap-[.2rem] lg:hidden
+    }
+    .toggle__menu span{
+        @apply w-[2rem] h-[.2rem] bg-semento block rounded-full
+    }
+    .buhok{
+        @apply h-[100vh] w-[100%] bg-black absolute z-[999] top-[5.6rem] left-[0] opacity-0 transition-all
+    }
+    .buhok.open{
+        @apply opacity-[.5]  transition-all
+    }
+}
