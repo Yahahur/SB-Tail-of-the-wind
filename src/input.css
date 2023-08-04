@@ -100,11 +100,11 @@
         @apply max-w-[25rem] flex flex-wrap gap-[2rem] mx-auto justify-center 
     }
     .favorites__nav li{
-        @apply p-[.4rem] rounded-md text-black font-bold 
+        @apply p-[.4rem] rounded-md text-black font-bold lg:text-[1rem] lg:text-end
     }
-    .favorites__nav li.active{
+    /* .favorites__nav li.active{
         @apply  bg-lasalle 
-    }
+    } */
     .favorites__desc__wrapper{
         @apply bg-BG p-[1rem]
     }
@@ -112,7 +112,7 @@
         @apply hidden
     }
     .favorites__item__content img{
-        @apply  h-auto rounded-full bg-BG px-[1rem] lg:w-[3-rem]
+        @apply  h-auto rounded-full bg-BG px-[1rem] lg:w-[30-rem] lg:w-[30rem] 
     }
     .favorites__item__content.active{
         @apply flex gap-[2rem] flex-col text-center
@@ -127,3 +127,4 @@
         @apply font-normal 
     }
 }
+
