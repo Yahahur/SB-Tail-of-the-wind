@@ -945,17 +945,41 @@ video {
   text-align: center;
 }
 
-.getting__text2 {
-  flex-direction: column;
-}
-
 @media (min-width: 1024px) {
+  .getting__text p {
+    justify-content: center;
+  }
+
   .getting__text2 {
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     vertical-align: middle;
+  }
+}
+
+.kamote {
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .kamote {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.bilog {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .bilog {
+    margin-right: 4rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -978,11 +1002,13 @@ video {
 
 @media (min-width: 1024px) {
   .getting__text2 p {
+    max-width: 25rem;
     text-align: center;
   }
 }
 
 .endless__text h1 {
+  padding-top: 2rem;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
@@ -999,11 +1025,6 @@ video {
   padding-top: 1rem;
   padding-bottom: 2.5rem;
   text-align: center;
-  font-size: .9rem;
-}
-
-.endless__text2 {
-  flex-direction: column;
 }
 
 @media (min-width: 1024px) {
@@ -1012,16 +1033,49 @@ video {
     margin-right: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     vertical-align: middle;
   }
 }
 
-.endless__text2 a {
-  padding-left: 2rem;
+.endless__text2 span {
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .endless__text2 span {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.kamoti {
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .kamoti {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.icon {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .icon {
+    margin-right: 4rem;
+    max-width: 12rem;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .endless__text2 h3 {
-  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
   padding-bottom: 1.5rem;
   font-weight: 600;
 }
@@ -1033,14 +1087,186 @@ video {
 }
 
 .endless__text2 p {
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   padding-bottom: 1.5rem;
-  font-size: 1rem;
 }
 
 @media (min-width: 1024px) {
   .endless__text2 p {
+    max-width: 25rem;
     text-align: center;
+  }
+}
+
+.kamotContent h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.kamot img {
+  max-width: 8rem;
+  padding: .5rem;
+}
+
+.kamotContent p {
+  align-items: flex-start;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .kamotContent p {
+    max-width: 1rem;
+  }
+}
+
+.kamot {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.cash__card__text h1 {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .cash__card__text h1 {
+    padding-top: 3rem;
+    font-size: 1.8rem;
+  }
+}
+
+.cash__card__text p {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+  .cash__card__text2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+  }
+}
+
+.kamoti {
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .kamoti {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cash__card__text2 h3 {
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.cash__card__text2 p {
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .cash__card__text2 p {
+    max-width: 25rem;
+  }
+}
+
+.cash__card__text2 h1 {
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .cash__card__text2 h1 {
+    max-width: 25rem;
+    text-align: center;
+  }
+}
+
+.rewards{
+  background-image:url("./img/rewards/844262945b2a8b8cfb293156e2583872.webp");
+  background-size:cover;
+  height:668px;
+  background-repeat:no-repeat;
+}
+
+.rewards__wrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 233 226 / var(--tw-bg-opacity));
+}
+
+.rewards__heading {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 13rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .rewards__heading {
+    max-width: 20rem;
+    padding-top: 7rem;
+  }
+}
+
+.rewards__text img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rewards__text p {
+  padding: 3rem;
+  padding-top: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .rewards__text p {
+    max-width: 40rem;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .button {
+    padding-bottom: 8rem;
+  }
+}
+
+.starsbaba {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.starsImage__leftStars {
+  width: 15rem;
+}
+
+.starsImage__rightStars {
+  width: 15rem;
+}
+
+@media (min-width: 1024px) {
+  .rewards__contentColumn {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -1054,6 +1280,10 @@ video {
 
 .table {
   display: table;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-12 {
@@ -1080,13 +1310,26 @@ video {
   border-radius: 9999px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .bg-\[\#1E3932\] {
   --tw-bg-opacity: 1;
   background-color: rgb(30 57 50 / var(--tw-bg-opacity));
 }
 
+.bg-medyowhite {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 240 235 / var(--tw-bg-opacity));
+}
+
 .pt-\[5rem\] {
   padding-top: 5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-\[1\.2rem\] {
@@ -1131,10 +1374,37 @@ video {
   transition-duration: 150ms;
 }
 
+@font-face{
+  font-family: maven;
+
+  src: url("../Fonts/MavenPro-VariableFont_wght.woff");
+}
+
+body{
+  font-family: maven;
+}
+
 .container{
   max-width:90rem;
   padding:1.5rem;
   margin:0 auto;
+}
+
+.rewardscontainer{
+  max-width:150rem;
+  padding:1.5rem;
+  margin:0 auto;
+  @media screen and (max-width:500px){
+    background-position-y:6rem;
+
+    background-size:contain;
+
+    background-position-x:50rem;
+
+    text-align:unset;
+
+    padding:0rem;
+  }
 }
 
 .btn {
@@ -1185,9 +1455,27 @@ video {
   background-color: #006341;
 }
 
+@media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:pl-\[3rem\] {
+    padding-left: 3rem;
+  }
+
+  .lg\:pr-\[10rem\] {
+    padding-right: 10rem;
+  }
+
+  .lg\:pr-\[6rem\] {
+    padding-right: 6rem;
   }
 }
 

@@ -2,10 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+    font-family: maven;
+    src: url("../Fonts/MavenPro-VariableFont_wght.woff");
+}
+
+body{
+    font-family: maven;
+}
+
 .container{
     max-width:90rem;
     padding:1.5rem;
     margin:0 auto;
+}
+.rewardscontainer{
+    max-width:150rem;
+    padding:1.5rem;
+    margin:0 auto;
+    @media screen and (max-width:500px){
+        background-position-y:6rem;
+        background-size:contain;
+        background-position-x:50rem;
+        text-align:unset;
+        padding:0rem;
+    }
 }
 .btn {
     background-color: transparent;
@@ -45,6 +66,8 @@
 .btn.bg--maitimnagreen:hover {
     background-color: #006341;
 }
+
+
 
 @layer components{
     .header{
@@ -192,38 +215,123 @@
         @apply font-semibold text-center text-[1.5rem] lg:text-[1.8rem] lg:pt-[3rem]
     }
     .getting__text p{
-        @apply text-center  pt-[1rem] pb-[2.5rem]
+        @apply text-center  pt-[1rem] pb-[2.5rem] lg:justify-center
     }
-    .getting__text2{
-        @apply lg:flex flex-col lg:mx-auto lg:align-middle lg:flex-row
+    .getting__text2 {
+        @apply lg:flex  lg:mx-auto lg:align-middle lg:flex-row lg:justify-center
+    }
+    .kamote {
+        @apply items-center lg:flex lg:flex-col
+    }
+    .bilog {
+        @apply text-center lg:mr-[4rem] lg:pl-[5rem] lg:pb-[2rem]
     }
     .getting__text2 h3{
         @apply font-semibold pl-[1.5rem]  pb-[1.5rem] lg:text-center
     }
     .getting__text2 p{
-        @apply  pl-[1.5rem] pb-[1.5rem] lg:text-center
+        @apply  pl-[1.5rem] pb-[1.5rem] lg:text-center lg:max-w-[25rem] 
     }
 
 
 
 
     .endless__text h1{
-        @apply font-semibold text-center text-[1.5rem] lg:text-[1.8rem] lg:pt-[3rem]
+        @apply font-semibold text-center text-[1.5rem] pt-[2rem] lg:text-[1.8rem] lg:pt-[3rem] 
     }
     .endless__text p{
-        @apply text-center  pt-[1rem] pb-[2.5rem] text-[.9rem]
+        @apply text-center pt-[1rem] pb-[2.5rem] 
     }
-    .endless__text2{
-        @apply lg:flex flex-col lg:mx-auto lg:align-middle lg:flex-row
+    .endless__text2 {
+        @apply lg:flex  lg:mx-auto lg:align-middle lg:flex-row lg:justify-center
     }
-    .endless__text2 a{
-        @apply pl-[2rem] 
+    .endless__text2 span{
+        @apply pl-[1.5rem] lg:flex lg:justify-center
+    }
+    .kamoti {
+        @apply items-center lg:flex lg:flex-col
+    }
+    .icon {
+        @apply text-center lg:mr-[4rem] lg:pl-[5rem] lg:pb-[1rem] lg:max-w-[12rem]
     }
     .endless__text2 h3{
-        @apply font-semibold pl-[2rem]  pb-[1.5rem] lg:text-center
+        @apply font-semibold pt-[2rem] pl-[1.5rem]  pb-[1.5rem] lg:text-center
     }
     .endless__text2 p{
-        @apply  text-[1rem] pl-[2rem] pb-[1.5rem] lg:text-center
+        @apply  pl-[1.5rem] pb-[1.5rem] lg:text-center lg:max-w-[25rem] 
+    }
+
+
+
+    .kamotContent h2{
+        @apply font-semibold text-[1.2rem] 
+    }
+    .kamot img{
+        @apply p-[.5rem] max-w-[8rem]
+    }
+    .kamotContent p{
+        @apply pb-[2rem] items-start lg:max-w-[1rem]
+    }
+    .kamot{
+        @apply flex  pt-[2rem]
+    }
+    .cash__card__text h1{
+        @apply font-semibold text-center text-[1.5rem] pt-[2rem] lg:text-[1.8rem] lg:pt-[3rem] 
+    }
+    .cash__card__text p{
+        @apply text-center pt-[1rem] pb-[2.5rem] text-[.9rem] font-normal
+    }
+    .cash__card__text2 {
+        @apply lg:flex  lg:mx-auto lg:align-middle lg:flex-row lg:justify-center
+    }
+    .kamoti {
+        @apply items-center lg:flex lg:flex-col
+    }
+    .cash__card__text2 h3{
+        @apply font-semibold pl-[1.5rem]  pb-[1.5rem] 
+    }
+    .cash__card__text2 p{
+        @apply   pb-[1.5rem] pl-[1.5rem]   lg:max-w-[25rem] 
+    }
+    .cash__card__text2 h1{
+        @apply   pb-[1.5rem] lg:text-center lg:max-w-[25rem] 
+    }
+    
+
+
+    .rewards{
+        background-image:url("./img/rewards/844262945b2a8b8cfb293156e2583872.webp");
+        background-size:cover;
+        height:668px;
+        background-repeat:no-repeat;
+    }
+
+    .rewards__wrapper{
+        @apply bg-BG
+    }
+    .rewards__heading{
+        @apply font-semibold text-[1.5rem] max-w-[13rem] mx-auto lg:max-w-[20rem] lg:pt-[7rem]
+    }
+    .rewards__text img{
+        @apply mx-auto
+    }
+    .rewards__text p{
+        @apply p-[3rem] pt-[1.5rem] lg:max-w-[40rem]
+    }
+    .button{
+        @apply flex justify-center lg:pb-[8rem]
+    }
+    .starsbaba{
+        @apply flex flex-row-reverse
+    }
+    .starsImage__leftStars{
+        @apply w-[15rem]
+    }
+    .starsImage__rightStars{
+        @apply w-[15rem]
+    }
+    .rewards__contentColumn{
+        @apply lg:flex lg:justify-center
     }
 }
 

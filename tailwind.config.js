@@ -13,9 +13,13 @@ module.exports = {
             'semento':'hsl(240,1.51%,50.98%)',
             'BG':'#d4e9e2',
             'get':'#F1F8F5',
+            'medyowhite':'#F2F0EB',
+            'guhit':'#F2F0EB',
+            
           },
           backgroundImage:{
-            'star':"url('./img/rewards/star.png')"
+            'star':"url('./img/rewards/star.png')",
+            'rewards':"url('./img/rewards/844262945b2a8b8cfb293156e2583872.webp')",
           },
     },
   },
