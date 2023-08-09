@@ -15,7 +15,7 @@ module.exports = {
             'get':'#F1F8F5',
             'medyowhite':'#F2F0EB',
             'guhit':'#F2F0EB',
-            
+            'fontkulay':'#686868',
           },
           backgroundImage:{
             'star':"url('./img/rewards/star.png')",

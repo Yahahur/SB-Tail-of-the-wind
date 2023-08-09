@@ -34,3 +34,11 @@ toggleMenu.addEventListener("click", () => {
     hair.classList.toggle("open");
 });
 
+
+const drop = document.querySelectorAll(".footer__nav ul.nav li");
+drop.forEach((link) => {
+    link.addEventListener("click", () => {
+    link.nextElementSibling.classList.toggle("open");
+    link.querySelector("i").classList.toggle("open");
+    });
+});

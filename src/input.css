@@ -139,22 +139,23 @@ body{
         @apply  flex flex-wrap  mx-auto justify-center font-semibold
     }
     .favorites__nav li{
-        @apply p-[1.81rem] relative
+        @apply p-[1.73rem] relative
     }
     .favorites__nav li:after{
-        @apply content-[''] w-0 h-[3px] bg-red-600 block absolute bottom-0 left-0 origin-bottom-left ease-in duration-[.5s]
+        @apply content-[''] w-0 h-[3px] bg-lasalle block absolute bottom-0 left-0 origin-bottom-left ease-in duration-[.5s]
     }
     .favorites__nav li.active:after{
         @apply w-full
     }
     .favorites__desc__wrapper{
-        @apply bg-BG p-[1rem] h-[500px]
+        @apply bg-BG p-[1rem] h-[600px] lg:h-[400px]
     }
     /* .favorites__item__content{
         @apply hidden
     } */
     .favorites__item__content{
-        @apply  p-[1.5rem] absolute top-[4rem] opacity-0 ease-in duration-300 lg:flex lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:max-w-[50rem] lg:top-[8rem]
+        @apply  p-[1.5rem] absolute top-[4rem] opacity-0 ease-in duration-300 lg:flex 
+        lg:left-1/2 lg:transform lg:-translate-x-1/2  lg:top-[2rem]
     } 
     .favorites__item__content.active{
         @apply opacity-[1] ease-in duration-[.5s]
@@ -166,10 +167,11 @@ body{
         @apply flex gap-[2rem] flex-col text-center
     } */
     .favorites__text h2{
-        @apply text-[1.2rem] font-semibold  mb-[1rem] text-center
+        @apply text-[1.2rem] font-semibold  mb-[1rem] text-center lg:text-start lg:text-[1.5rem]
+        lg:pt-[3rem]
     }
     .favorites__text table tr{
-        @apply h-[5rem] flex flex-col text-center
+        @apply h-[5rem] flex flex-col text-center lg:text-justify
     }
     .favorites__text table tr td:first-child{
         @apply font-normal 
@@ -254,6 +256,11 @@ body{
     .icon {
         @apply text-center lg:mr-[4rem] lg:pl-[5rem] lg:pb-[1rem] lg:max-w-[12rem]
     }
+    .icon{
+        @media screen and (max-width:500px){
+            max-width:6.6rem;
+        }
+    }
     .endless__text2 h3{
         @apply font-semibold pt-[2rem] pl-[1.5rem]  pb-[1.5rem] lg:text-center
     }
@@ -304,6 +311,9 @@ body{
         background-size:cover;
         height:668px;
         background-repeat:no-repeat;
+        @media screen and (max-width:500px){
+            height:559px;
+        }
     }
 
     .rewards__wrapper{
@@ -333,5 +343,88 @@ body{
     .rewards__contentColumn{
         @apply lg:flex lg:justify-center
     }
-}
 
+
+    .ayokol{
+        @apply bg-medyowhite
+    }
+    .ayokol__text {
+        @apply mx-auto 
+    }
+    .ayokol__text p{
+        @apply text-[.9rem] pb-[.9rem]
+    }
+    .ayokol__text h2{
+        @apply text-[.9rem] pb-[.9rem] font-bold text-fontkulay
+    }
+    .ayokoll{
+        @apply lg:flex lg:flex-row
+    }
+    .ayokoll1{
+        @apply lg:flex lg:flex-row-reverse lg:pr-[10rem]
+    }
+    .ayokol__text__taas{
+        @apply lg:max-w-[40rem] 
+    }
+    .ayokol__text__taas1{
+        @apply lg:max-w-[40rem] lg:pl-[2rem]
+    }
+    .ayokol__text__baba{
+        @apply lg:max-w-[40rem] lg:pl-[5rem]
+    }
+    .ayokol__text__baba1{
+        @apply lg:max-w-[40rem] 
+    }
+
+
+
+    .footer__nav{
+        @apply lg:flex lg:flex-row
+    }
+    .footer__nav ul.nav li a{
+        @apply flex items-center justify-between lg:p-[1rem] 
+    }
+    .footer__nav ul.nav li a i.open {
+        @apply rotate-[180deg] ease-in duration-[.2s] 
+    }
+    .footer__nav ul.nav li a i{
+        @apply  p-[1rem] ease-in duration-[.2s] lg:hidden bg-transparent
+    }
+    .footer__nav ul.nav li a i:hover{
+        @apply p-[1rem] bg-gray-300 rounded-full
+    }
+    .footer__nav ul.nav ul.drop.open{
+        @apply max-h-[50rem] ease-in duration-[.2s] 
+    }
+    .drop{
+        @apply text-fontkulay max-h-[0rem] ease-in duration-[.2s] overflow-hidden lg:max-h-[50rem]
+    }
+
+
+
+    .logo{
+        @apply flex gap-[1rem] text-[2rem]
+    }
+    .logo li{
+        @apply flex gap-[1rem] text-[2rem]
+    }
+    .logo a{
+        @apply flex gap-[1rem] text-[2rem] p-[.2rem]  bg-black rounded-full text-white
+    }
+    .logo a:hover{
+        @apply bg-gray-300 rounded-full p-[.2rem]
+    }
+    
+    /* .IG{
+        @apply bg-black rounded-full text-white
+    }
+    .YT{
+        @apply bg-black rounded-full text-white
+    }
+    .TWT{
+        @apply bg-black rounded-full text-white
+    } */
+    .textsababa{
+        @apply lg:flex lg:flex-row lg:gap-[2rem] lg:pt-[2rem]
+    }
+}
