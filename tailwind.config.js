@@ -16,6 +16,9 @@ module.exports = {
             'medyowhite':'#F2F0EB',
             'guhit':'#F2F0EB',
             'fontkulay':'#686868',
+            'pinkto':'#EB81A5',
+            'violetto':'#8F8BF4',
+            'yellowto':'#F1FF67',
           },
           backgroundImage:{
             'star':"url('./img/rewards/star.png')",

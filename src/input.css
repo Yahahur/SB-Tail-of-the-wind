@@ -16,6 +16,15 @@ body{
     padding:1.5rem;
     margin:0 auto;
 }
+.shellcon{
+    max-width:85rem;
+    padding:1.5rem;
+    margin:0 auto;
+    @media screen and (min-width:100px){
+        padding:0;
+        margin:0 auto;
+    }
+}
 .rewardscontainer{
     max-width:150rem;
     padding:1.5rem;
@@ -59,15 +68,38 @@ body{
     background-color: #006341;
 }
 .btn.bg--maitimnagreen{
-    background: #013220;
+    background: #006341;
     color:#ffffff;
     border: 1px solid #ffffff;
 }
 .btn.bg--maitimnagreen:hover {
-    background-color: #006341;
+    background-color: #013220;
+}
+.btn.bg--pinkto{
+    background: #EB81A5;
+    color:#000000;
+    border: 1px solid #000000;
+}
+.btn.bg--pinkto:hover {
+    background-color: #c26b88;
+}
+.btn.bg--violetto{
+    background: #8F8BF4;
+    color:#2b2b2b;
+    border: 1px solid #2b2b2b;
+}
+.btn.bg--violetto:hover {
+    background-color:#625fb3;
 }
 
-
+.btn.bg--yellowto{
+    background: #F1FF67;
+    color:#2b2b2b;
+    border: 1px solid #2b2b2b;
+}
+.btn.bg--yellowto:hover {
+    background-color:#bec94f;
+}
 
 @layer components{
     .header{
@@ -124,6 +156,15 @@ body{
     .buhok.open{
         @apply h-[100vh] w-[100%] bg-black absolute z-[999] top-[5.6rem] left-[0] opacity-[.5] transition-all
     }
+.toggle__menu.open span:nth-child(2) {
+  opacity: 0;
+}
+.toggle__menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+}
+.toggle__menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
 
     
     .favorites{
@@ -427,4 +468,98 @@ body{
     .textsababa{
         @apply lg:flex lg:flex-row lg:gap-[2rem] lg:pt-[2rem]
     }
+
+
+
+
+
+
+
+/* HOME */
+/* .shell__text{
+    @apply p-[1rem] bg-pinkto
+} */
+.home{
+    @apply pt-[5rem] lg:pt-[6.5rem] lg:grid lg:grid-flow-row
 }
+.shell{
+    @apply pt-[2rem] lg:flex lg:items-center lg:justify-center
+}
+.shell__content1{
+    @apply bg-pinkto  lg:flex lg:flex-row-reverse 
+}
+.shell__text h2{
+    @apply  text-[1.7rem] font-bold text-center pt-[1.5rem] lg:pt-[7rem] lg:max-w-[15rem] lg:mx-auto lg:text-[3rem]
+}
+.shell__text p{
+    @apply text-[1.2rem] text-center font-semibold pt-[1.5rem] lg:p-[7rem] lg:pt-[1rem] lg:pb-[2rem]
+}
+}
+.shell__button{
+    @apply flex justify-center pt-[2rem] pb-[2rem] 
+}
+.shell__content1 img{
+    @apply pl-[0rem] lg:max-w-[43rem]
+}
+
+/* .shell__text__green{
+    @apply p-[1rem] bg-lasalle
+} */
+.shell__content2{
+    @apply bg-lasalle pt-[0rem] lg:flex lg:flex-row
+}
+.shell__text__green h2{
+    @apply  text-[1.7rem] font-bold text-center pt-[1.5rem] text-white lg:pt-[9rem] lg:max-w-[25rem] lg:mx-auto lg:text-[3rem]
+}
+.shell__text__green p{
+    @apply text-[1.2rem] text-center font-semibold pt-[1.5rem] text-white lg:p-[7rem] lg:pt-[1rem] lg:pb-[2rem]
+}
+.shell__button{
+    @apply flex justify-center pt-[2rem] pb-[2rem]
+}
+.shell__content2 img{
+    @apply  pl-[0rem] lg:max-w-[42rem]
+}
+
+/* .shell__text__violet{
+    @apply p-[1rem] bg-violetto
+} */
+.shell__content3{
+    @apply bg-violetto pt-[0rem] lg:flex lg:flex-row-reverse
+}
+.shell__text__violet h2{
+    @apply  text-[1.7rem] font-bold text-center pt-[1.5rem] lg:pt-[12rem] lg:max-w-[30rem] lg:mx-auto lg:text-[3rem]
+}
+.shell__text__violet p{
+    @apply text-[1.2rem] text-center font-semibold pt-[1.5rem] lg:p-[7rem] lg:pt-[1rem] lg:pb-[2rem]
+}
+.shell__button{
+    @apply flex justify-center pt-[2rem] pb-[2rem] font-bold
+}
+.shell__content3 img{
+    @apply  pl-[0rem] lg:max-w-[43rem]
+}
+
+/* .shell__text__yellow{
+    @apply p-[1rem] bg-yellowto
+} */
+.shell__content4{
+    @apply bg-yellowto pt-[0rem] lg:flex lg:flex-row
+}
+.shell__text__yellow h2{
+    @apply  text-[1.7rem] font-bold text-center pt-[1.5rem] lg:pt-[11rem] lg:max-w-[30rem] lg:mx-auto lg:text-[3rem]
+}
+.shell__text__yellow p{
+    @apply text-[1.2rem] text-center font-semibold pt-[1.5rem] lg:p-[7rem] lg:pt-[1rem] lg:pb-[2rem]
+}
+.shell__button{
+    @apply flex justify-center pt-[2rem] pb-[2rem] font-bold
+}
+.shell__content4 img{
+    @apply  pl-[0rem] lg:max-w-[42rem]
+}
+
+.shell__content__text p{
+    @apply text-[.9rem] p-[2rem] text-center pt-[2rem] lg:max-w-[45rem]
+}
+
